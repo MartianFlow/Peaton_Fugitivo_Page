@@ -1,0 +1,112 @@
+:root {
+    --background-color: #000000;
+    --menu-color-font-hover: #C4C1BC;
+    --color-font: #CBCBCB;
+    --sm: 1.2rem;
+    --md: 1.4rem;
+    --lg: 1.6rem;
+    --xxlg: 2.0rem;
+    --title-size:6rem;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    /* font-family: 'Special Elite', cursive; */
+    font-family: 'Octin Spraypaint', sans-serif;
+    background-color: var(--background-color);
+    background-image:url('../img/main-background.png');
+
+}
+
+.main-nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px groove grey;
+    background-color: var(--background-color);
+}
+
+.main-nav__logo {
+    margin-top: 4px;
+    margin-bottom: 4px;
+    width: 50px;
+    height: 50px;
+}
+
+.main-nav__list {
+    display: flex;
+}
+
+.main-nav__link {
+    text-decoration: none;
+    padding: 12px;
+    font-size: var(--xxlg);
+    color: var(--color-font);
+}
+
+.main-nav__link:hover {
+    border-radius: 10%;
+    border-bottom: 1px solid var(--menu-color-font-hover);
+    color: var(--menu-color-font-hover);
+}
+
+.section-photo__img {
+    width: 100%;
+    height: auto;
+}
+
+.members-title {
+    margin-top: 40px;
+    text-align: center;
+    font-size: var(--title-size);
+    color: var(--color-font);
+}
+
+.cards-members {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.cards-members__card {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid white;
+    /* border-style: ; */
+    border-radius: 2%;
+}
+
+.cards-members__description {
+    margin-top: 40px;
+    text-align: center;
+    font-size: 3.5rem;
+    color: var(--color-font);
+
+}
+.cards-members__img {
+    width: 300px;
+    height: auto;
+}
+
+.footer {
+    display: grid;
+    place-items: center;
+    width: 100%;
+    height: 300px;
+    border-top: 1px solid var(--menu-color-font-hover);
+}
+
+.footer p {
+    font-size: var(--xxlg);
+    color: var(--color-font);
+}
