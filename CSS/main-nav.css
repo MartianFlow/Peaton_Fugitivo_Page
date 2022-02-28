@@ -1,0 +1,106 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Octin Spraypaint', sans-serif;
+    background-color: #000000;
+}
+
+.navigation {
+    position: fixed;
+    left: -100%;
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    place-content: center;
+    background-color: #000000;
+
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .7s;
+}
+
+.nav-container {
+    width: 280px;
+    height: 90vh;
+    display: grid;
+    place-content: center;
+}
+
+ .nav-container__logo {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 280px;
+    height: 120px; 
+
+}
+
+.nav-container__logo img {
+    width: 120px;
+    height: inherit;
+}
+
+.nav-container__main {
+    margin-top: 40px;
+}
+
+.list-menu { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.list-menu__item {
+    list-style: none;
+}
+
+.list-menu__item a {
+    font-size: 3.5rem;
+    line-height: 1;
+    text-decoration: none;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+.list-social {
+    position: absolute;
+    bottom: 40px;
+    display: flex;
+}
+
+.list-social li {
+    margin-left: 12px;
+}
+
+
+.list-social li:first-child a img {
+    margin-top: 14px;
+    width: 32px;
+    height: 32px;
+}
+
+.list-social li:nth-child(2) a img {
+    margin-top: 8px;
+    width: 44px;
+    height: 44px;
+}
+
+.list-social li:nth-child(3) a img {
+    margin-top: 14px;
+    width: 32px;
+    height: 32px;
+}
+
+.list-social li:last-child a img {
+    margin-top: 6px;
+    width: 60px;
+    height: 48px;
+}
+
