@@ -20,7 +20,6 @@ html {
 }
 
 body {
-    /* font-family: 'Special Elite', cursive; */
     font-family: 'Octin Spraypaint', sans-serif;
     background-color: var(--background-color);
     background-image:url('../img/main-background.png');
