@@ -20,7 +20,8 @@ body {
     display: grid;
     place-content: center;
     background-color: #000000;
-
+    z-index: 2;
+    
     -webkit-transition: .3s;
     -o-transition: .3s;
     transition: .7s;
@@ -69,6 +70,11 @@ body {
     color: #FFFFFF;
 }
 
+.list-menu__item a:hover {
+    color: #fcbf16;
+    border-bottom: 1px solid #fcbf16;
+} 
+
 .list-social {
     position: absolute;
     bottom: 40px;
@@ -80,27 +86,20 @@ body {
 }
 
 
-.list-social li:first-child a img {
-    margin-top: 14px;
-    width: 32px;
-    height: 32px;
+
+.fa-facebook,
+.fa-instagram,
+.fa-twitter,
+.fa-youtube {
+    color: #ffffff;
+    font-size: 40px;
 }
 
-.list-social li:nth-child(2) a img {
-    margin-top: 8px;
-    width: 44px;
-    height: 44px;
+.fa-facebook:hover,
+.fa-instagram:hover,
+.fa-twitter:hover,
+.fa-youtube:hover {
+    color: #fcbf16;
 }
 
-.list-social li:nth-child(3) a img {
-    margin-top: 14px;
-    width: 32px;
-    height: 32px;
-}
-
-.list-social li:last-child a img {
-    margin-top: 6px;
-    width: 60px;
-    height: 48px;
-}
 

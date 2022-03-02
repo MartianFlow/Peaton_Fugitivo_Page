@@ -28,20 +28,28 @@ body {
 }
 
 .main-nav {
-    margin-top: 40px;
+    margin-top: 20px;
     margin-left: 20px;
+    padding: 8px;
     position: fixed;
     display: flex;
     justify-content: center;
     font-size: 24px;
-    z-index: 1;
+    z-index: 3;
+    box-shadow: 0px 0px 15px #797979;
+    border-radius: 50%;
 }
 
 .fa-bars {
+    font-size: 2.5rem;
     cursor: pointer;
-    color: #FFFFFF;
+    color: #797979;
 }
 
+.fa-bars:hover,
+.fa-close:hover {
+    color: #fcbf16;
+}
 .main-nav__list {
     display: flex;
 }
@@ -59,13 +67,54 @@ body {
     color: var(--menu-color-font-hover);
 }
 
-.section-photo__img {
+.section-main-banner {
     width: 100%;
-    height: auto;
+    height: 100vh;
+    background: url(../img/main-photo-banner-lg.jpg);
+    background-size: cover;
+    background-position: center;
+    animation: movimiento 15s infinite linear alternate;
+}
+
+@keyframes movimiento {
+    from{
+        background-position: left;
+    }to{
+        background-position: right;
+    }
+}
+
+.section-title div{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    transition: .10s;
+}
+
+.section-title div h1{
+    position: absolute;
+    bottom: 20px;
+    font-size: 4.3rem;
+    color: #FFFFFF;
+    text-shadow: 6px 6px 15px #000000;
+}
+
+.section-title div.black {
+    width: 100%;
+    padding-top: 80px;
+    position: fixed;
+    top: 0;
+    transition: .3s;
+    background-color: #000000;
+}
+
+.section-title div.black h1 {
+    font-size: 3rem;
+    margin-bottom: 4px;
 }
 
 .members-title {
-    margin-top: 40px;
+    height: 1200px;
     text-align: center;
     font-size: var(--title-size);
     color: var(--color-font);
@@ -109,4 +158,11 @@ body {
 .footer p {
     font-size: var(--xxlg);
     color: var(--color-font);
+}
+
+
+@media(min-width:640px){
+    .section-title div h1{
+        font-size: 8rem;
+    }
 }
